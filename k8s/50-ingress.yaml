@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-ing
+  namespace: hello
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: hello.192.168.252.9.nip.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hello-svc
+                port:
+                  number: 80

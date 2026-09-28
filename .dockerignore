@@ -1,0 +1,8 @@
+.git
+.gitignore
+*.md
+k8s/
+docs/
+.env*
+*.log
+Makefile

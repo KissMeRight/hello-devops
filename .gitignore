@@ -1,0 +1,7 @@
+.env
+.env.*
+*.key
+*.pem
+k8s/20-secret.yaml
+.DS_Store
+*.log
